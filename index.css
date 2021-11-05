@@ -31,22 +31,22 @@ header{
 .links a{
     text-decoration:none;
     color: black;
-    transition: all .5s ease;
+    transition: all .2s ease;
 }
 a:hover{
     font-size: smaller;
-    transition: all .5s ease;
+    transition: all .2s ease;
     filter: drop-shadow(0.2rem 0.2rem 0.2rem black);
 }
 .links-social a{
     margin: 0.5rem;
     text-decoration:none;
-    transition: all .5s;
+    transition: all .2s;
     color:rgb(114, 207, 247);
 }
 .links-social a:hover{
     color: orange;
-    transition: all .5s;
+    transition: all .2s;
     filter: drop-shadow(0.2rem 0.2rem 0.2rem black);
 }
 .toggle-btn{
@@ -67,12 +67,12 @@ a:hover{
     .toggle-btn{
        position: absolute;
        display: block;
-       transition: all .5s ease-in;
+       transition: all .2s ease-in;
     }
     .toggle-btn:hover{
         transform: rotate(90deg);
         cursor: pointer;
-        transition: all .5s ease-in;
+        transition: all .2s ease-in;
         
     }
     .links{
@@ -96,13 +96,13 @@ a:hover{
         
     }
     a{
-        transition: all .5s ease-in;
+        transition: all .2s ease-in;
     }
     a:hover{
         width: 100%;
-        margin: 0.5rem;
+        margin: 0.2rem;
         font-size: smaller;
-        transition: all .5s ease-in-out;
+        transition: all .2s ease-in-out;
         filter: drop-shadow(0.2rem 0.2rem 0.2rem black);
     }
   
