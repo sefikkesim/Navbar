@@ -31,19 +31,23 @@ header{
 .links a{
     text-decoration:none;
     color: black;
+    transition: all .5s ease;
 }
 a:hover{
     font-size: smaller;
-    transition: all 1s ease;
+    transition: all .5s ease;
+    filter: drop-shadow(0.2rem 0.2rem 0.2rem black);
 }
 .links-social a{
     margin: 0.5rem;
     text-decoration:none;
+    transition: all .5s;
     color:rgb(114, 207, 247);
 }
 .links-social a:hover{
     color: orange;
-    transition: all 1s;
+    transition: all .5s;
+    filter: drop-shadow(0.2rem 0.2rem 0.2rem black);
 }
 .toggle-btn{
     display: none;
@@ -56,18 +60,20 @@ a:hover{
     color:rgb(114, 207, 247) ;
 }
 
-@media (max-width:750px){
+@media (max-width:800px){
     .header{
         position: relative;
     }
     .toggle-btn{
        position: absolute;
        display: block;
+       transition: all .5s ease-in;
     }
     .toggle-btn:hover{
         transform: rotate(90deg);
         cursor: pointer;
-        transition: all 1s ease-in;
+        transition: all .5s ease-in;
+        
     }
     .links{
         height: 0;
@@ -87,12 +93,17 @@ a:hover{
         display: flex;
         justify-content: space-between;
         padding: auto;
+        
+    }
+    a{
+        transition: all .5s ease-in;
     }
     a:hover{
         width: 100%;
         margin: 0.5rem;
         font-size: smaller;
-        transition: all 1s ease-in-out;
+        transition: all .5s ease-in-out;
+        filter: drop-shadow(0.2rem 0.2rem 0.2rem black);
     }
   
 }
