@@ -4,49 +4,48 @@
     box-sizing: border-box;
     font-size: 1.3rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    transition: all 1s ;
+    transition: all 300ms ease-in;
 }
 header{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     background: rgb(241, 244, 245);
     filter: drop-shadow(1rem 1rem 1rem rgb(214, 212, 212));
     position: relative;
 }
 .links{
+    width: 100%;
     display: flex;
+    justify-content: space-between;
     list-style: none;
-    margin: 2rem 4rem;
-    
+    margin: 2rem 2rem;
 }
-li{
-    display: block;
-}
+
 .links-social{
+    width: 100%;
     display: flex;
-    margin: 2rem 0;
+    justify-content: flex-end;
+    margin: 2rem 2rem;
     list-style: none;
 }
 .links a{
-    margin: 0.5rem;
     text-decoration:none;
     color: black;
 }
-a:hover{
-    margin: 0.5rem;
-    font-size: smaller;
-    transition: all 1s ease;
-    
-}
+
 .links-social a{
     margin: 0.5rem;
     text-decoration:none;
-    color:rgb(114, 207, 247)
+    color:rgb(114, 207, 247);
+}
+.links-social a:hover{
+    color: orange;
+    transition: all 1s;
 }
 .toggle-btn{
     display: none;
     position: fixed;
-    top: 1rem;
+    top: 0.5rem;
     right: 2rem;
     font-size: 2rem;
     border: none;
@@ -55,12 +54,17 @@ a:hover{
 }
 
 @media (max-width:750px){
+    .header{
+        position: relative;
+    }
     .toggle-btn{
+       position: absolute;
        display: block;
     }
     .toggle-btn:hover{
         transform: rotate(90deg);
-        
+        cursor: pointer;
+        transition: all 1s ease-in;
     }
     .links{
         height: 0;
@@ -72,15 +76,20 @@ a:hover{
     }
     .show-links{
         height: 8rem;
-        justify-content: space-between;
         flex-direction: column;
+        justify-content: space-between;
         margin: 1rem;
     }
     .header{
         display: flex;
         justify-content: space-between;
-        padding: 2.75rem;
-        
+        padding: auto;
     }
-   
+    a:hover{
+        width: 100%;
+        margin: 0.5rem;
+        font-size: smaller;
+        transition: all 1s ease-in-out;
+    }
+  
 }
